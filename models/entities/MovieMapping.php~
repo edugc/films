@@ -1,0 +1,19 @@
+<?php
+
+namespace models\entities;
+
+/**
+ * @Entity
+ * @Table(name="peliculas")
+ */
+class MovieMapping
+{
+
+    /**
+     * @Id
+     * @Column(type="integer", name="id")
+     */
+    private $id;
+
+
+}
