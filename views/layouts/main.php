@@ -40,10 +40,7 @@ AppAsset::register($this);
             ['label' => 'About', 'url' => ['/site/about']],
             ['label' => 'Contact', 'url' => ['/site/contact']],
             ['label' => 'Formulario', 'url' => ['/site/formulario']],
-            ['label' => 'Países', 'url' => ['/country/listado']],
             ['label' => 'Generador de código', 'url' => ['/gii']],
-            ['label' => 'CRUD', 'url' => ['/country/index']],
-            ['label' => 'PELICULAS', 'url' => ['/pelicula/index']],
             Yii::$app->user->isGuest ? (
                 ['label' => 'Login', 'url' => ['/site/login']]
             ) : (
