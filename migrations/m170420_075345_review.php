@@ -4,6 +4,7 @@ use yii\db\Migration;
 
 class m170420_075345_review extends Migration
 {
+    //comentartio de prueba
     public function up()
     {
         $this->createTable('review', [
