@@ -5,7 +5,6 @@ use yii\db\Migration;
 class m170420_075345_review extends Migration
 {
     public function up()
-        //coimmmejnrfe
     {
         $this->createTable('review', [
             'id_film' => $this->integer(),
