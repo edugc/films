@@ -21,7 +21,7 @@ $this->title = 'Inicia sesión';
         <h1><?= Html::encode($this->title) ?></h1>
         <p>Introduce tus datos para iniciar sesión:</p>
 
-        <?php $form = ActiveForm::begin(); ?>
+        <?php $form = ActiveForm::begin(['action' =>['site/create'], 'method' => 'post']); ?>
             <?= $form->field($model,'nick')->label('Nombre de usuario'); ?>
             <?= $form->field($model, 'password')->passwordInput()->label('Contraseña'); ?>
             <?= Html::submitButton('Inicio',['class' => 'btn btn-basic']) ?>
