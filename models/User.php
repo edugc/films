@@ -97,4 +97,15 @@ class User extends \yii\db\ActiveRecord
     {
         return $this->hasMany(Film::className(), ['id' => 'id_film'])->viaTable('vote', ['id_user' => 'id']);
     }
+
+    /**
+     * Finds user by password reset token
+     *
+     * @return static|null
+     */
+    public static function findByUsername($username)
+    {
+        return static::findOne(['username' => $username, 'status' => self::STATUS_ACTIVE]);
+    }
+
 }
