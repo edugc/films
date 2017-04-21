@@ -25,7 +25,8 @@ $this->params['breadcrumbs'][] = $this->title;
         ]) ?>
     </p>
 
-    <?= DetailView::widget([
+    <?php
+    echo DetailView::widget([
         'model' => $model,
         'attributes' => [
             'id',
@@ -35,7 +36,11 @@ $this->params['breadcrumbs'][] = $this->title;
             'country',
             'type',
             'poster',
+
         ],
-    ]) ?>
+    ]);
+    echo  Html::img('@web/img/casablanca.jpg');
+    ?>
+
 
 </div>
